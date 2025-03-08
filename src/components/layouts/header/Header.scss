@@ -1,0 +1,111 @@
+.primary-header {
+  position: fixed;
+  display: flex;
+  height: 4rem;
+  width: 100%;
+  padding: 0px 4rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: transparent;
+
+  .header_wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1680px;
+    margin: 0 2rem;
+    height: 100%;
+
+    .left_nav {
+      display: flex;
+      width: 35%;
+      height: 100%;
+      align-items: center;
+      gap: 8rem;
+      justify-content: flex-end;
+
+      .nav_item_left {
+        gap: 4px;
+        flex-direction: column;
+        display: flex;
+        width: 6rem;
+        height: 3rem;
+
+        .line {
+          flex-shrink: 0;
+          width: 100%;
+          height: 1px;
+          background-color: var(--secondary-color);
+        }
+
+        .nav_link_text {
+          font-size: 1rem;
+          font-weight: 400;
+        }
+
+        .nav_link_number {
+          font-size: 1.25rem;
+          font-weight: 300;
+        }
+      }
+    }
+
+    .right_nav {
+      flex-direction: row;
+      display: flex;
+      width: 35%;
+      height: 100%;
+      gap: 5rem;
+      align-items: center;
+      justify-content: flex-start;
+
+      .nav_item_right {
+        gap: 4px;
+        flex-direction: column;
+        display: flex;
+        align-items: flex-end;
+        width: 6rem;
+        height: 3rem;
+
+        .line {
+          flex-shrink: 0;
+          width: 100%;
+          height: 1px;
+          background-color: var(--secondary-color);
+        }
+
+        .nav_link_text {
+          font-size: 1rem;
+          font-weight: 400;
+        }
+
+        .nav_link_number {
+          font-size: 1.25rem;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1600px) {
+  .primary-header {
+    .header_wrapper {
+      .left_nav {
+        width: 45%;
+      }
+
+      .right_nav {
+        width: 45%;
+      }
+
+      .menuBTN {
+        display: flex;
+        height: 100%;
+        width: 5rem;
+        margin: 0 2rem;
+      }
+    }
+  }
+}
