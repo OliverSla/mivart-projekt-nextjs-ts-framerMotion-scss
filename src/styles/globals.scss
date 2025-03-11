@@ -1,9 +1,9 @@
 :root {
-  --primary-color: #272727;
-  --secondary-color: #B3A68E;
+  --primary-color: #444444;
+  --secondary-color: #9e8b67;
   --secondary-color-hover: #85755a;
   --background-color: #f5f5f5;
-  --text-color: #B3A68E;
+  --text-color: #3f3e3e;
   --primaryFont: var(--font-primary), sans-serif;
   --secondaryFont: var(--font-secondary), sans-serif;
 }
@@ -32,4 +32,23 @@ a {
   text-decoration: none;
 }
 
+p{
+  color: var(--text-color);
+}
+
+
+h2{
+  color: var(--primary-color);
+  font-size: 3rem;
+  letter-spacing: 1px;
+  font-family: var(--font-secondary);
+}
+
+h4{
+  color: var(--secondary-color);
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-family: var(--font-secondary);
+}
 
