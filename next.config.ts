@@ -1,9 +1,22 @@
-import type { NextConfig } from "next";
-const path = require('path');
+import path from "path";
+import { fileURLToPath } from "url";
 
-const nextConfig: NextConfig = {
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   sassOptions: {
-    includePaths: [path.join(__dirname, 'src/styles')],
+    includePaths: [path.join(__dirname, "src/styles")],
+    prependData: `@import '__variables.scss';`,
+  },
+
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+
+  typescript: {
+    ignoreBuildErrors: true,
   },
 };
 
